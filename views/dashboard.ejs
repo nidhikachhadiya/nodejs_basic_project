@@ -1,3 +1,9 @@
-<%- include('headerlayout') %>
-Hello World
-<%- include('footerlayout') %>
+<%- include('layout/common/headerlayout') %>
+<script>
+const layout = {
+    headerId: "dashboardLink"
+};
+callLayoutSpecificJS(layout);
+</script>
+<%- include('layout/dashboardlayout')%>
+<%- include('layout/common/footerlayout') %>

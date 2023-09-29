@@ -1,3 +1,9 @@
-<%- include('headerlayout') %>
-<%- include('g2layout') %>
-<%- include('footerlayout') %>
+<%- include('layout/common/headerlayout') %>
+<script>
+const layout = {
+    headerId: "g2Link"
+};
+callLayoutSpecificJS(layout);
+</script>
+<%- include('layout/g2layout') %>
+<%- include('layout/common/footerlayout') %>

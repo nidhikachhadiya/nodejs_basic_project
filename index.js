@@ -4,6 +4,7 @@ const port = process.env.PORT || 5000;
 
 application.set('view engine', 'ejs');
 application.use(express.static('views/css'));
+application.use(express.static('views/js'));
 
 application.get('/', (req, res) => res.render('dashboard'));
 application.get('/g', (req, res) => res.render('g'));

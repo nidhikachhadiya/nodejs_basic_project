@@ -1,3 +1,9 @@
-<%- include('headerlayout') %>
-<%- include('loginlayout') %>
-<%- include('footerlayout') %>
+<%- include('layout/common/headerlayout') %>
+<script>
+const layout = {
+    headerId: "loginLink"
+};
+callLayoutSpecificJS(layout);
+</script>
+<%- include('layout/loginlayout') %>
+<%- include('layout/common/footerlayout') %>

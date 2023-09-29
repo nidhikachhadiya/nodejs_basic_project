@@ -1,3 +1,9 @@
-<%- include('headerlayout') %>
-<%- include('glayout') %>
-<%- include('footerlayout') %>
+<%- include('layout/common/headerlayout') %>
+<script>
+    const layout = {
+                    headerId: "gLink"
+                };
+    callLayoutSpecificJS(layout);
+</script>
+<%- include('layout/glayout') %>
+<%- include('layout/common/footerlayout') %>
