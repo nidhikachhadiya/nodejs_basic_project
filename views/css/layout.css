@@ -12,10 +12,26 @@
   .form-signin .form-floating:focus-within {
     z-index: 2;
   }
+  .form-signin input[type="email"] {
+    margin-bottom: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #6c757d;
+    color:white;
+  }
+  
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #6c757d;
+    color:white;
+  }
+  
 .form-signin input[type="text"] {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    background-color: #150d0d;
+    background-color: #6c757d;
     margin-bottom: 20px;
     color:white;
 
@@ -24,7 +40,7 @@
   .form-signin input[type="number"] {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    background-color: #150d0d;
+    background-color: #6c757d;
     margin-bottom: 20px;
     color:white;
 
@@ -33,9 +49,11 @@
   .form-signin input[type="date"] {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-    background-color: #150d0d;
+    background-color: #6c757d;
     margin-bottom: 20px;
     color:white;
 
   }
+
+
   
