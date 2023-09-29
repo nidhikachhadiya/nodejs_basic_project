@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="template.css" rel="stylesheet">
+        <link href="g.css" rel="stylesheet">
+        <link href="g2.css" rel="stylesheet">
+        <link href="signin.css" rel="stylesheet">
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+        <script>
+            function updateCss(activeLinkId) {
+                const navLinks = document.querySelectorAll('.nav-link');
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+
+                const activeLink = document.getElementById(activeLinkId);
+                activeLink.classList.add('active');
+            }
+        </script>
+    </head>
+    <body class="d-flex h-100 text-center text-white bg-dark">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <header class="mb-auto">
+            <h5 class="float-md-start mb-0">Book DriveTest</h5>
+            <div>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a id="dashboardLink" class="nav-link active" onclick="updateCss('dashboardLink')" aria-current="page" href="/dashboard">DASHBOARD</a>
+                    <a id="g2Link" class="nav-link" onclick="updateCss('g2Link')" href="/g2">G2_TEST</a>
+                    <a id="gLink" class="nav-link" onclick="updateCss('gLink')" href="/g">G_TEST</a>
+                    <a id="loginLink" class="nav-link" onclick="updateCss('loginLink')" href="/login">LOGIN</a>
+                </nav>
+            </div>
+            </header>
+        
+    
